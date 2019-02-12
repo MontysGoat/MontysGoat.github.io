@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+h1 {
+    text-align: center;
+}
+
+.mobile {
+    display: none;
+}
+
+div > h2 {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    margin: -1px -1px 0px 0px;
+    padding-right: 5px;
+    border: 1px solid black;
+}
+
+div {
+    position: relative;
+    background: #6FA798;
+    border: 1px solid black;
+    max-height: 100px;
+    overflow: hidden;
+}
+
+div:hover {
+    overflow-y: auto;
+    cursor: ns-resize	;
+}
+
+
+#Chicken > h2 {
+    background: #D4AB6A;
+    color: #3d2600;
+}
+
+#Beef > h2 {
+    background: #D4916A;
+    color: rgb(51, 19, 0);
+}
+
+#Sushi > h2 {
+    background: #748BA7;
+    color: #051C38;
+}
+
+div > p {
+    padding: 15px 10px 10px 10px;
+}
+/************* Desktop ****************/
+@media (min-width: 992px){
+    .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+        float: left;
+        margin: 1%;
+      }
+      .col-lg-1 {
+        width: 6.33%;
+        margin: 1%
+      }
+      .col-lg-2 {
+        width: 14.66%;
+      }
+      .col-lg-3 {
+        width: 23%;
+      }
+      .col-lg-4 {
+        width: 31.33%;
+      }
+      .col-lg-5 {
+        width: 39.66%;
+      }
+      .col-lg-6 {
+        width: 48%;
+      }
+      .col-lg-7 {
+        width: 56.33%;
+      }
+      .col-lg-8 {
+        width: 64.66%;
+      }
+      .col-lg-9 {
+        width: 72.99%;
+      }
+      .col-lg-10 {
+        width: 81.33%;
+      }
+      .col-lg-11 {
+        width: 89.66%;
+      }
+      .col-lg-12 {
+        width: 98%;
+      }
+}
+/************* Tablet *****************/
+@media (min-width: 768px) and ( max-width: 991px){
+    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+        float: left;
+        margin: 1%;
+      }
+      .col-md-1 {
+        width: 6.33%;
+        margin: 1%
+      }
+      .col-md-2 {
+        width: 14.66%;
+      }
+      .col-md-3 {
+        width: 23%;
+      }
+      .col-md-4 {
+        width: 31.33%;
+      }
+      .col-md-5 {
+        width: 39.66%;
+      }
+      .col-md-6 {
+        width: 48%;
+      }
+      .col-md-7 {
+        width: 56.33%;
+      }
+      .col-md-8 {
+        width: 64.66%;
+      }
+      .col-md-9 {
+        width: 72.99%;
+      }
+      .col-md-10 {
+        width: 81.33%;
+      }
+      .col-md-11 {
+        width: 89.66%;
+      }
+      .col-md-12 {
+        width: 98%;
+      }
+}
+/************* Phone ******************/
+@media (max-width: 767px){
+    .mobile  {
+        display: inline;
+        padding: 1%;
+    }
+
+    .non-mobile {
+        display: none;
+    }
+
+    h2.mobile{
+        display: block;
+        position: relative;
+        align-items: stretch;
+        width: 100%;
+        text-align: center;
+        margin: 0px 0px 0px 0px;
+    }
+
+    p {
+        margin: 0em 0em 0em 0em;
+    }
+
+    .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+        float: left;
+        margin: 1%;
+      }
+      .col-sm-1 {
+        width: 6.33%;
+        margin: 1%
+      }
+      .col-sm-2 {
+        width: 14.66%;
+      }
+      .col-sm-3 {
+        width: 23%;
+      }
+      .col-sm-4 {
+        width: 31.33%;
+      }
+      .col-sm-5 {
+        width: 39.66%;
+      }
+      .col-sm-6 {
+        width: 48%;
+      }
+      .col-sm-7 {
+        width: 56.33%;
+      }
+      .col-sm-8 {
+        width: 64.66%;
+      }
+      .col-sm-9 {
+        width: 72.99%;
+      }
+      .col-sm-10 {
+        width: 81.33%;
+      }
+      .col-sm-11 {
+        width: 89.66%;
+      }
+      .col-sm-12 {
+        width: 98%;
+      }
+}
