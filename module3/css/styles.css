@@ -1,0 +1,50 @@
+body {
+    font-size: 16px;
+    color: #e2eef3;
+    background-color: #6dc7b9;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#header-nav{
+    background-color:#eb622e;
+    border-radius: 0;
+    border: 0;
+}
+
+.navbar-brand h1 {
+    color: #e2eef3;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none;
+}
+
+#nav-list{
+    margin-top: 10 px;
+    background-color: #BD554C;
+}
+
+#nav-list a {
+    color: #e2eef3;
+    text-align:center
+}
+
+.navbar-header button.navbar-toggle{
+    clear: both;
+    margin-top: -30px;
+}
+
+.icon-bar {
+    border: 1px solid #BD554C;
+}
+
+#home-tiles > div {
+    background-color: #356d64;
+    margin-bottom: 15px;
+}
