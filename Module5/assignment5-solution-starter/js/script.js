@@ -61,6 +61,21 @@ var switchMenuToActive = function () {
   }
 };
 
+// Remove the class 'active' from home and switch to About button
+var switchAboutToActive = function () {
+  // Remove 'active' from home button
+  var classes = document.querySelector("#navHomeButton").className;
+  classes = classes.replace(new RegExp("active", "g"), "");
+  document.querySelector("#navHomeButton").className = classes;
+
+  // Add 'active' to menu button if not already there
+  classes = document.querySelector("#navAboutButton").className;
+  if (classes.indexOf("active") === -1) {
+    classes += " active";
+    document.querySelector("#navAboutButton").className = classes;
+  }
+};
+
 // On page load (before images or CSS)
 document.addEventListener("DOMContentLoaded", function (event) {
 
@@ -180,6 +195,7 @@ function buildAndShowAboutHTML(aboutInfoHtml){
 }
 
 function buildAboutViewHtml(starRating, aboutInfoHtml){
+  switchAboutToActive();
   var finalHtml = "<section class='row'>";
   for (var i = 0; i < 5; i++){
     if(i < starRating){
