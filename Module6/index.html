@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="LunchCheck">
+<head >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">    
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <title>Module 6 Assignment Lunch Check</title>
+</head>
+<body>
+    <div class="container" ng-controller="LunchCheckController">
+        <h1>Lunch Check</h1>
+        <input type="text" ng-model="lunch">
+        <button ng-click="checkLunch()">Check if Too Much</button>
+        <div>*Empty/blank items will not be considered</div>
+        <div>
+            <h2 class="{{status}}">{{judgement}}</h2>
+        </div>
+    </div>
+</body>
+</html>

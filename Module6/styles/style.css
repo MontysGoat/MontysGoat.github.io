@@ -1,0 +1,13 @@
+.invalid{
+    color: red;
+    border-color: red;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.valid{
+    color: green;
+    border-color: green;
+    border-width: 2px;
+    border-style: solid;
+}
